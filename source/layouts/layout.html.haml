@@ -6,21 +6,22 @@
     %meta{:content => "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no", :name => "viewport"}
     / Use title if it's in the page YAML frontmatter
     %title= current_page.data.title || "Middleman"
-    %link{:href => "https://fonts.googleapis.com/css?family=Oswald", :rel => "stylesheet"}/
-    = stylesheet_link_tag :site
+    %link{:href => "https://fonts.googleapis.com/css?family=Oswald|Parisienne|Roboto", rel: "stylesheet"}
     = javascript_include_tag :all
     = stylesheet_link_tag :bootstrap
     = stylesheet_link_tag :stylish_portfolio
+    = stylesheet_link_tag :site
   %body
+    %ul
+      %li
+        %a About
+        %a Projects
+        %a Contact
     .container
-      %ul
-        %li
-          %a About
-          %a Projects
-          %a Contact
-
+      = partial 'partials/about'
+      = partial 'partials/projects'
       = yield
-      = partial 'partials/footer'
+      = partial 'partials/contact'
     -# = partial 'partials/background'
 
 
