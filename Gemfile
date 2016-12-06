@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 
 
 # Middleman Gems
+gem 'middleman', '>= 4.0.0'
+gem 'middleman-livereload'
 gem 'middleman-sprockets', '~> 4.0.0.rc'
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
@@ -16,4 +18,5 @@ group :development, :test do
   gem 'pry'
   gem 'launchy'
   gem 'rspec'
+  gem 'html2haml'
 end
