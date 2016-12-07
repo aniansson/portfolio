@@ -2,10 +2,17 @@
 @import "normalize";
 
 body {
-background: url("images/header.png") fixed;
+background: url("images/header.png"), fixed;
 background-position: top;
+background-color: white;
 background-repeat: no-repeat;
 background-size: 100%;
+margin: 0;
+height: 100%;
+// overflow: hidden
+}
+.row {
+  padding: 10em,
 }
 
 ul {
@@ -19,13 +26,13 @@ ul {
   word-spacing: 30px;
 }
 
-.container {
-height: 1500px;
-width: 1000px;
-margin: auto;
-margin-top: 1000px;
-background-color: white;
-}
+// .container {
+// height: 1500px;
+// width: 1000px;
+// margin: auto;
+// margin-top: 1000px;
+// background-color: white;
+// }
 
 ________________
 ABOUT
@@ -37,40 +44,55 @@ ________________
     text-align: center;
     font-size: 60px;
   }
-  p {
+  br {
     font-family: 'Roboto';
-    text-align: center;
+  }
+  .left {
+    float: left;
+    padding-right: 2em;
+    padding-bottom: 1em;
   }
 
 _________________
 PROJECTS
 _________________
 .projects {
+  text-align: center;
 }
   h3 {
     font-family: 'Parisienne';
     text-align: center;
     font-size: 60px;
   }
-  p {
+  h4 {
+    font-family: 'Oswald';
+    text-align: center;
+    color: #ff0066;
+  }
+  b {
     font-family: 'Roboto';
     text-align: center;
   }
-
-__________________
-FOOTER
-__________________
-.footer {
-}
-  h3.footer {
-    font-family: 'Roboto';
-    text-align: center;
-    font-size: 60px;
+  .github {
+    width: 20px;
   }
-  p.footer {
-    font-family: 'Roboto';
-    text-align: center;
+  .button {
+    vertical-align: middle;
   }
+// __________________
+// FOOTER
+// __________________
+// .footer {
+// }
+//   h3.footer {
+//     font-family: 'Roboto';
+//     text-align: center;
+//     font-size: 60px;
+//   }
+//   p.footer {
+//     font-family: 'Roboto';
+//     text-align: right;
+//   }
 
 // .logo img {
 //   height: 18.75em;

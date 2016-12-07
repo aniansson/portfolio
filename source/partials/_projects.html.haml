@@ -1,3 +1,8 @@
+%a{name: "projects"}
 .projects#projects
   %h3 Projects
-  %p
+  - data.projects.each do |projects|
+    %h4= projects[:name]
+    %b= projects[:description]
+    %a{href: "#{projects[:github]}", class: 'button'}
+      %img.github{src: "stylesheets/images/GitHub-Mark.jpg"}

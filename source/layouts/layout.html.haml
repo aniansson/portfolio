@@ -14,15 +14,14 @@
   %body
     %ul
       %li
-        %a About
-        %a Projects
-        %a Contact
-    .container
-      = partial 'partials/about'
-      = partial 'partials/projects'
-      = yield
-      = partial 'partials/contact'
-    -# = partial 'partials/background'
+        %a{href:"#about"} About
+        %a{href:"#projects"} Projects
+        %a{href:"#contact"} Contact
+    -# .container
+  .row
+    = partial 'partials/about'
+    = partial 'partials/projects'
+    = partial 'partials/contact'
 
 
 
