@@ -1,11 +1,11 @@
 - name: My Portfolio
   description: This site is my portfolio. Which I have built with help of Middleman. It is mainly built on HAML and CSS as well as some Ruby inputs.
-  github:
+  github: http://portfolio.ebbaaniansson.surge.sh/#contact
 
 - name: BMI Calculator
   description: One of my first websites I made was a BMI Calculator. This is written in JavaScript. You can calculate in both imperial and in metric values.
   github: https://aniansson.github.io/bmi/
 
 - name: FizzBuzz
-  description: Another project built with JavaScript. It is a game that calculates the number and translates to a word, depending on if its divisible with 3, 5 och 15. Try it out! 
+  description: Another project built with JavaScript. It is a game that calculates the number and translates to a word, depending on if its divisible with 3, 5 och 15. Try it out!
   github: https://aniansson.github.io/fizz_buzz_js/
